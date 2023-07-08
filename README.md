@@ -11,3 +11,11 @@ How to run:
 - Make sure you have python=3.10
 - Don't use librosa==0.8.0 like facebook suggested, use 0.10.0 (np.complex is depricated)
 - pip install -r requirements.txt
+
+Code is pretty messy, might fix (am doing this in my free time lol)
+
+Todo list:
+- Get speedup working w/o chipmunk effect
+- More voices
+- Try out different models - find best quality/time of inference
+- UI to highlight what you're reading
