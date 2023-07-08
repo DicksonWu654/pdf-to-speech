@@ -73,11 +73,14 @@ psutil @ file:///home/conda/feedstock_root/build_artifacts/psutil_1681775027942/
 ptyprocess @ file:///home/conda/feedstock_root/build_artifacts/ptyprocess_1609419310487/work/dist/ptyprocess-0.7.0-py2.py3-none-any.whl
 pure-eval @ file:///home/conda/feedstock_root/build_artifacts/pure_eval_1642875951954/work
 pycparser==2.21
+pydub==0.25.1
 Pygments @ file:///home/conda/feedstock_root/build_artifacts/pygments_1681904169130/work
 pylatexenc==2.10
 pyparsing==3.0.9
 PyPDF2==3.0.1
 pyrsistent==0.19.3
+pyrubberband==0.3.0
+PySoundFile==0.9.0.post1
 python-dateutil @ file:///home/conda/feedstock_root/build_artifacts/python-dateutil_1626286286081/work
 pyzmq @ file:///home/conda/feedstock_root/build_artifacts/pyzmq_1685519264162/work
 rdflib==6.3.2

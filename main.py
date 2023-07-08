@@ -27,7 +27,7 @@ import locale
 locale.getpreferredencoding = lambda: "UTF-8"
 
 import sys 
-sys.path.append("../vits")
+sys.path.append("./vits")
 
 from IPython.display import Audio
 import os
@@ -40,9 +40,6 @@ import utils
 import subprocess
 from models import SynthesizerTrn
 from scipy.io.wavfile import write
-
-
-
 
 def download(lang, tgt_dir="./"):
   lang_fn, lang_dir = os.path.join(tgt_dir, lang+'.tar.gz'), os.path.join(tgt_dir, lang)
