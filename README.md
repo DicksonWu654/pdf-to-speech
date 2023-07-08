@@ -9,8 +9,11 @@ A lot of code copied from: https://github.com/facebookresearch/fairseq/blob/main
 
 How to run:
 - Make sure you have python=3.10
-- Don't use librosa==0.8.0 like facebook suggested, use 0.10.0 (np.complex is depricated)
+- Make sure to git clone the vits (use git clone --recurse-submodules https://github.com/DicksonWu654/pdf-to-speech.git, or just git clone vits)
+  - You then have to go inside of vits, run `cd monotonic_align`, run `mkdir monotonic_align`, finally run: `python setup.py build_ext --inplace`
+  - It's a limition of Facebook's mms :(
 - pip install -r requirements.txt
+  - Don't use librosa==0.8.0 like facebook suggested, use 0.10.0 (np.complex is depricated)
 
 Code is pretty messy, will fix later 
 
