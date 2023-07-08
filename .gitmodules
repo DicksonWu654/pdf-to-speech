@@ -1,0 +1,3 @@
+[submodule "vits"]
+	path = vits
+	url = https://github.com/jaywalnut310/vits.git
