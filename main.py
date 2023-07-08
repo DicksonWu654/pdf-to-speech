@@ -41,6 +41,8 @@ import subprocess
 from models import SynthesizerTrn
 from scipy.io.wavfile import write
 
+
+
 def download(lang, tgt_dir="./"):
   lang_fn, lang_dir = os.path.join(tgt_dir, lang+'.tar.gz'), os.path.join(tgt_dir, lang)
   cmd = ";".join([
@@ -48,12 +50,15 @@ def download(lang, tgt_dir="./"):
         f"tar zxvf {lang_fn}"
   ])
   print(f"Download model for language: {lang}")
-
+  subprocess.check_output(cmd, shell=True)
   print(f"Model checkpoints in {lang_dir}: {os.listdir(lang_dir)}")
   return lang_dir
 
 LANG = "eng"
-ckpt_dir = download(LANG)
+if not os.path.isdir(LANG):
+    ckpt_dir = download(LANG)
+else:
+    ckpt_dir = LANG
 
 def preprocess_char(text, lang=None):
     """
